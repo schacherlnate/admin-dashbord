@@ -3,12 +3,14 @@ html {
     --blue: rgb(68, 123, 226);
     --background-mc: rgb(197, 219, 243);
     --bc-searchbar: #e4dfdf;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
     background-color: inherit;
     color: inherit;
+    font-family: inherit;
 }
 
 body {
@@ -104,9 +106,15 @@ body {
 
 .card {
     color: black;
+    background-color: gold;
+    border-radius: 16px;
+    padding-left: 5px;
+}
+
+.card-content {
     background-color: white;
-    border-radius: 8px;
-    padding: 5px;
+    height: 100%;
+    border-radius: 16px;
 }
 
 .main-right {
