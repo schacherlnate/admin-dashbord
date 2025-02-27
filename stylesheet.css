@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+    --blue: rgb(68, 123, 226);
+    --background-mc: rgb(197, 219, 243);
+    --bc-searchbar: #e4dfdf;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    width: 80%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--blue, blue);
+    color: white;
+    padding: 5px;
+}
+
+.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+
+.sidebar button, .header button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "search corner"
+        "handle actions";
+}
+
+.search-bar {
+    grid-area: search;
+    background-color: var(--bc-searchbar);
+    border-radius: 8px;
+    width: 50%;
+    height: 60%;
+}
+
+.corner-icons {
+    grid-area: corner;
+}
+
+.handle {
+    grid-area: handle;
+}
+
+.make-content {
+    grid-area: actions;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.make-content button {
+    border-radius: 16px;
+    padding: 8px 24px;
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--background-mc);
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 5px;
+}
+
+.card {
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.main-right {
+    padding: 5px;
+}
+
+.main-right > div {
+    background-color: white;
+}
