@@ -5,6 +5,11 @@ html {
     --background-mc: rgb(226, 235, 243);
     --bc-searchbar: #dbe1e6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --cat-profile-pic: url(./cat.png);
+    --hummingbird-profile-pic: url(./humming-bird.png);
+    --ogre-profile-pic: url(./ogre.png);
+    --orc-profile-pic: url(./orc.png);
+    --ctuhulhu-profile-pic: url(./cthulhu.png);
 }
 
 *, *::before, *::after {
@@ -329,4 +334,30 @@ p {
 
 .prof-handle p:first-of-type {
     font-weight: bold;
+}
+
+.profile-pic {
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-pic#the-shack {
+    background-image: var(--hummingbird-profile-pic);
+}
+
+.profile-pic#cmpos5 {
+    background-image: var(--cat-profile-pic);
+}
+
+.profile-pic#Ronny-boy-pic {
+    background-image: var(--ctuhulhu-profile-pic);
+}
+
+.profile-pic#musta-busta {
+    background-image: var(--orc-profile-pic);
+}
+
+.profile-pic#fuck-rylai {
+    background-image: var(--ogre-profile-pic);
 }
