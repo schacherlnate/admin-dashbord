@@ -36,24 +36,24 @@ p {
     grid-template-areas:
         "sidebar header"
         "sidebar main";
-    width: clamp(800px, 70%, 1600px);
+    width: clamp(900px, 70%, 1350px);
 }
 
 .sidebar {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 3%;
     background-color: var(--blue, blue);
     color: white;
-    padding: 0 0 0 15px;
+    padding: 15px 0 0 15px;
 }
 
 .sidebar > div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 6px;
+    gap: 8px;
 }
 
 .sidebar button, .header button {
@@ -233,12 +233,14 @@ p {
 .card-content p {
     font-size: 0.9em;
     color: rgba(54, 53, 53, 0.836);
+    margin-bottom: 5px;
 }
 
 .card-content p:first-of-type {
     font-weight: bold;
     color: black;
     font-size: 1.1em;
+    margin-bottom: 0;
 }
 
 .card-icons {
